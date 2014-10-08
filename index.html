@@ -5,25 +5,74 @@
   </head>
   <body>
 
-    <div class="splash">
-      <!-- Featured initiatives with Image, Title and caption -->
+    <section class="splash">
       <!-- Navigation with branding and links -->
-    </div>
+      <nav>
+        <ul>
+          <li class="navHome">Home</li>
+          <li class="navContact">Contact</li>
+          <li class="navDonate">Donate</li>
+          <li class="navAbout">About</li>
+          <li class="navBlog">Blog</li>
+        </ul>
+      </nav>
 
-    <div class="contact">
+      <!-- Featured initiatives with Image, Title and caption -->
+    </section>
+
+    <section class="contactDonate">
       <!-- Contact section has a field for the visitors email and message -->
-      <!-- Donation form collects the users address and CC details etc. TODO: Finalize the fields require here and the donation process -->
-    </div>
+      <div class="contactWrap">
+        <!-- Some kind of accreditation proof so the people who are looking to donate can verify the authenticity of the NGO -->
+        <p>Some kind of accreditation proof.</p>
 
-    <div class="founders">
+        <form class="contact" action="POST" method="/">
+          <input type="text" name="contactEmail" />
+          <textarea name="contactMessage"></textarea>
+        </form>
+      </div>
+
+      <!-- Donation form collects the users address and CC details etc. TODO: Finalize the fields require here and the donation process -->
+      <form class="donate" action="POST" method="/">
+        
+      </form>
+    </section>
+
+    <section class="founders">
       <!-- Each founder needs a picture, name and summary. We'll organize these are two rows of three -->
-    </div>
+
+      <ul>
+        <!-- foreach founder: -->
+          <li>
+            <div class="imgWrap">
+              <img src="" />
+            </div>
+
+            <h3>Jonathan Crane</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </li>
+        <!-- /foreach -->
+      </ul>
+    </section>
 
     <footer>
       <!-- Logo -->
+      <img class="footerBranding"></img>
+
       <!-- Navigation -->
+      <ul>
+        <li class="navHome">Home</li>
+        <li class="navContact">Contact</li>
+        <li class="navDonate">Donate</li>
+        <li class="navAbout">About</li>
+        <li class="navBlog">Blog</li>
+      </ul>
+
       <!-- Description -->
+      Bhavna is lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
       <!-- Copyright & Accreditation information -->
+      Website &copy;Bhavna 2014. Some kind of accreditation proof.
     </footer>
   </body>
 </html>
